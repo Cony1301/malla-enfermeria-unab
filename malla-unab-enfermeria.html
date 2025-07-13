@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Malla Curricular Enfermería - UNAB</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3f7;
+    color: #4a3f55;
+    margin: 20px;
+  }
+  h1 {
+    color: #6b4c8a;
+    text-align: center;
+  }
+  .semestre {
+    background-color: #d9c7e3;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(107,76,138,0.3);
+    cursor: pointer;
+    padding: 15px 20px;
+    user-select: none;
+    font-weight: bold;
+  }
+  .semestre:hover {
+    background-color: #c3aee0;
+  }
+  .asignaturas {
+    max-width: 600px;
+    margin: 0 auto 15px auto;
+    background-color: #ede8f3;
+    border-radius: 6px;
+    padding: 10px 20px;
+    display: none;
+  }
+  .asignaturas ul {
+    padding-left: 20px;
+  }
+  .asignaturas li {
+    margin-bottom: 6px;
+  }
+  .activo + .asignaturas {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<h1>Malla Curricular Enfermería - UNAB</h1>
+
+<div class="semestre" onclick="toggleSemestre(this)">Semestre I</div>
+<div class="asignaturas">
+  <ul>
+    <li>Morfología Integral</li>
+    <li>Química General y Orgánica</li>
+    <li>Biología Celular</li>
+    <li>Razonamiento Matemático</li>
+    <li>Bases Teóricas de la Enfermería</li>
+  </ul>
+</div>
+
+<div class="semestre" onclick="toggleSemestre(this)">Semestre II</div>
+<div class="asignaturas">
+  <ul>
+    <li>Microbiología</li>
+    <li>Bioquímica</li>
+    <li>Psicología Evolutiva</li>
+    <li>Socioantropología</li>
+    <li>Bases del Cuidado de Enfermería</li>
+    <li>Habilidades Comunicativas</li>
+  </ul>
+</div>
+
+<div class="semestre" onclick="toggleSemestre(this)">Semestre III</div>
+<div class="asignaturas">
+  <ul>
+    <li>Fisiología</li>
+    <li>Salud Pública I</li>
+    <li>Enfermería en la Promoción y Prevención en Salud</li>
+    <li>Cuidado de Enfermería en el Ciclo Vital</li>
+    <li>Inglés I</li>
+  </ul>
+</div>
+
+<div class="semestre" onclick="toggleSemestre(this)">Semestre IV</div>
+<div class="asignaturas">
+  <ul>
+    <li>Fisiopatología</li>
+    <li>Farmacología General</li>
+    <li>Salud Pública II</li>
+    <li>Bases de Enfermería en Salud Familiar y Comunitaria</li>
+    <li>Cuidado de Enfermería en Adulto y Adulto Mayor</li>
+    <li>Inglés II</li>
+  </ul>
+</div>
+
+<div class="semestre" onclick="toggleSemestre(this)">Semestre V</div>
+<div class="asignaturas">
+  <ul>
+    <li>Farmacología Clínica y Farmacovigilancia</li>
+    <li>Cuidados de Enfermería en Salud Familiar</li>
+    <li>Cuidado de Enfermería en el Niño y Adulto</li>
+    <li>Fundamentos de Gestión y Liderazgo en Enfermería</li>
+    <li>Integrador I: Cuidados de Enfermería I</li>
+    <li>Inglés III</li>
+  </ul>
+</div>
+
+<div class="semestre" onclick="toggleSemestre(this)">Semestre VI</div>
+<div class="asignaturas">
+  <ul>
+    <li>Cuidado de Enfermería en Salud Mental y Comunidad</li>
+    <li>Cuidado de Enfermería en el Adulto y Adulto Mayor con Alteraciones de Salud</li>
+    <li>Métodos de Análisis en Enfermería</li>
+    <li>Administración en Unidades de Enfermería</li>
+    <li>Razonamiento Científico y TICS</li>
+    <li>Inglés IV</li>
+  </ul>
+</div>
+
+<div class="semestre" onclick="toggleSemestre(this)">Semestre VII</div>
+<div class="asignaturas">
+  <ul>
+    <li>Ética y Legislación en Cuidado Integral</li>
+    <li>Enfermería del Niño y Adulto</li>
+    <li>Seminario de Investigación en Enfermería</li>
+    <li>Cuidado de Enfermería en el Niño y Adolescente con Alteraciones de la Salud</li>
+    <li>Integrador II: Cuidado de Enfermería II</li>
+  </ul>
+</div>
+
+<div class="semestre" onclick="toggleSemestre(this)">Semestre VIII</div>
+<div class="asignaturas">
+  <ul>
+    <li>Desarrollo de Proyectos en Enfermería</li>
+    <li>Responsabilidad Social</li>
+    <li>Pensamiento Crítico</li>
+  </ul>
+</div>
+
+<div class="semestre" onclick="toggleSemestre(this)">Semestre IX</div>
+<div class="asignaturas">
+  <ul>
+    <li>Integrador III: Gestión del Cuidado en Unidades de Enfermería</li>
+  </ul>
+</div>
+
+<div class="semestre" onclick="toggleSemestre(this)">Semestre X</div>
+<div class="asignaturas">
+  <ul>
+    <li>Integrador IV: Gestión del Cuidado en Salud Familiar y Comunitaria</li>
+  </ul>
+</div>
+
+<script>
+function toggleSemestre(element) {
+  element.classList.toggle('activo');
+}
+</script>
+
+</body>
+</html>
